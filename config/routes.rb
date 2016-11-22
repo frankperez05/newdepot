@@ -7,6 +7,8 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails5 for more book information.
 #---
 Rails.application.routes.draw do
+  resources :line_items
+  resources :carts
   root 'store#index', as: 'store_index'
 
   resources :products
